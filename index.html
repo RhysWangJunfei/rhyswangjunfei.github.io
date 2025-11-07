@@ -3,35 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Junfei | Research & Projects</title>
+  <title>Junfei | Power Systems & AI</title>
   <style>
+    /* ====== GENERAL STYLES ====== */
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #222;
+      background-color: #fafafa;
+    }
+    a { text-decoration: none; color: #007acc; }
+    a:hover { color: #004a80; }
+
+    /* ====== NAVBAR ====== */
+    header {
+      background: #003366;
+      color: white;
+      padding: 0.5rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav li a {
+      color: white;
+      font-weight: 500;
+    }
+    nav li a:hover {
+      text-decoration: underline;
+    }
+
+    /* ====== BANNER ====== */
+    .banner {
+      background: url("banner.jpg") center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    .banner h2 {
+      background-color: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      font-size: 2rem;
+    }
+
+    /* ====== MAIN CONTENT ====== */
+    main {
+      max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
       line-height: 1.6;
     }
-    h1 { color: #0056b3; }
-    a { color: #007acc; }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    section h3 {
+      border-left: 5px solid #003366;
+      padding-left: 10px;
+      color: #003366;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      background: #003366;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I’m Junfei 👋</h1>
-  <p>Welcome to my research website! I’m a postdoc in power engineering working on AI-driven methods for optimal power flow and distributed energy systems.</p>
+  <header>
+    <h1>Junfei</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h2>📚 Research Interests</h2>
-  <ul>
-    <li>Optimal Power Flow (OPF)</li>
-    <li>Convex Relaxation & Machine Learning</li>
-    <li>Electric Vehicle Integration</li>
-  </ul>
+  <section class="banner" id="home">
+    <h2>AI & Optimization for Smart Grids</h2>
+  </section>
 
-  <h2>🧠 Selected Projects</h2>
-  <p>Check out my recent work on <a href="https://github.com/yourusername/yourproject">Data-driven OPF</a>.</p>
+  <main>
+    <section id="research">
+      <h3>Research</h3>
+      <p>I study data-driven approaches for optimal power flow, convex relaxation, and integration of renewable energy resources in modern power systems.</p>
+    </section>
+
+    <section id="publications">
+      <h3>Publications</h3>
+      <ul>
+        <li><b>Data-driven Methods for Optimal Power Flow in Smart Grid</b> — PhD Thesis, 2024.</li>
+        <li>“Learning Feasible Power Flow Mappings with Neural Networks,” <i>IEEE Transactions on Power Systems</i>, under review.</li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h3>Awards</h3>
+      <ul>
+        <li>Best Paper Award, IEEE PES 2024</li>
+        <li>Graduate Fellowship, Ontario Research Fund</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:junfei@email.com">junfei@email.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Junfei | <a href="mailto:junfei@email.com">Contact</a></p>
+    © 2025 Junfei | Last updated November 2025
   </footer>
 </body>
 </html>
